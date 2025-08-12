@@ -2,19 +2,14 @@
 import getNews from '@/services/api';
 import { Root } from '@/types/services';
 import Link from 'next/link';
-import { useParams } from 'next/navigation';
 import React, { useEffect, useState } from 'react'
 
-
-function NewsPageDetail() {
+function NewsPageDetail({params}:{params: string}) {
   const [data, setData] = useState<Root>();
-  const params = useParams();
-  console.log(params.id);
   useEffect(() => {
     getNews().then((result) => setData(result));
   }, []);
-  console.log(data)
-  const specificNews = data?.results.find((i) => i.article_id === params.id);
+  const specificNews = data?.results.find((i) => i.article_id === params);
   return (
     <div>
       {specificNews ? (

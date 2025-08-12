@@ -1,7 +1,13 @@
 import NewsPageDetail from "@/components/newsPageDetail";
 
-function Page() {
-  <NewsPageDetail />
+async function page({params}: {params:Promise<{id: string}>}) {
+  const sendParams = await params
+
+  return (
+    <div>
+     <NewsPageDetail params={sendParams.id}/>
+    </div>
+  )
 }
 
-export default Page;
+export default page;
