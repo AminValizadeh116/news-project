@@ -19,14 +19,12 @@ function NewsPageDetail() {
     <div>
       {specificNews ? (
         <div className="md:grid md:grid-cols-3 gap-10 my-10">
-          {/* eslint-disable-next-line @next/next/no-img-element */}
           <img src={specificNews.image_url} alt="news image" />
           <div className="col-span-2">
             <h2 className="text-3xl max-sm:text-xl font-bold pb-5">{specificNews.title}</h2>
             <p>{specificNews.description}</p>
             <div className="md:flex md:items-center md:justify-between">
               <div className="flex items-center">
-                {/* eslint-disable-next-line @next/next/no-img-element */}
                 <img
                   src={specificNews.source_icon}
                   className="w-20 h-20 max-sm:w-15 max-sm:h-15 rounded-full"

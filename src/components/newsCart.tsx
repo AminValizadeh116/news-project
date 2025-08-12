@@ -52,7 +52,6 @@ function NewsCart({
       <div
         className={`flex items-center pt-2 ${cartSize().width} pb-3`}
       >
-        {/* eslint-disable-next-line @next/next/no-img-element */}
         <img src={image_url} alt="i" className={`rounded ${cartSize().height} ${cartSize().width} object-contain`} />
       </div>
       <div>
@@ -65,7 +64,6 @@ function NewsCart({
       </div>
       <div className="text-sm pt-5">
         <div className="flex max-sm:gap-1 gap-2 items-center">
-          {/* eslint-disable-next-line @next/next/no-img-element */}
           <img
             src={source_icon}
             alt="icone"
