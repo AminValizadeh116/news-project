@@ -21,13 +21,13 @@ async function Contributers() {
               className="bg-red-950 max-sm:h-30 sm:h-45 relative rounded-4xl max-xl:rounded-xl col-span-1 max-sm:px-1 max-sm:py-1 p-5"
             >
               <div className="flex items-center gap-3 max-sm:gap-1">
+                {/* eslint-disable-next-line @next/next/no-img-element */}
                 <img
                   src={i.source_icon}
                   className="bg-red-50 w-20 h-20 rounded-full max-sm:w-8 max-sm:h-8"
                 />
                 <span className="text-white flex items-center sm:h-20 max-sm:text-xs max-sm:h-16 sm:text-lg overflow-hidden text-2xl font-bold">
-                  {" "}
-                  {i.source_name}{" "}
+                  {i.source_name}
                 </span>
               </div>
               <div className="flex justify-center items-center">
