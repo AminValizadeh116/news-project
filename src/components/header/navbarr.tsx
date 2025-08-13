@@ -36,15 +36,15 @@ export default function Example() {
           </button>
         </div>
         <PopoverGroup className="hidden lg:flex lg:gap-x-12">
-          <a href="/" className="text-lg/18 font-semibold text-gray-900">
+          <Link href="/" className="text-lg/18 font-semibold text-gray-900">
             Home
-          </a>
-          <a href="/allNews" className="text-lg/18 font-semibold text-gray-900">
+          </Link>
+          <Link href="/allNews" className="text-lg/18 font-semibold text-gray-900">
             News
-          </a>
-          <a href="/create" className="text-lg/18 font-semibold text-gray-900">
+          </Link>
+          <Link href="/create" className="text-lg/18 font-semibold text-gray-900">
             craete
-          </a>
+          </Link>
         </PopoverGroup>
         <div className='hidden lg:flex lg:flex-1 lg:justify-end'>
         <div className="border rounded border-gray-300">
@@ -59,10 +59,10 @@ export default function Example() {
         <div className="fixed inset-0 z-50" />
         <DialogPanel className="fixed inset-y-0 right-0 z-50 w-full overflow-y-auto bg-white opacity-90 p-6 sm:max-w-sm sm:ring-1 sm:ring-gray-900/10">
           <div className="flex items-center justify-between">
-            <a href="#" className="-m-1.5 p-1.5">
+            <Link href="#" className="-m-1.5 p-1.5">
               <span className="sr-only">Your Company</span>
               <Image src={aa} alt='aa' className='w-6 h-5'/>
-            </a>
+            </Link>
             <button
               type="button"
               onClick={() => setMobileMenuOpen(false)}
@@ -75,24 +75,24 @@ export default function Example() {
           <div className="mt-6 flow-root">
             <div className="-my-6 divide-y divide-gray-500/10">
               <div className="space-y-2 py-6">
-                <a
+                <Link
                   href="/"
                   className="-mx-3 block rounded-lg px-3 py-2 text-base/7 font-semibold text-gray-900 hover:bg-gray-50"
                 >
                   Home
-                </a>
-                <a
+                </Link>
+                <Link
                   href="allNews"
                   className="-mx-3 block rounded-lg px-3 py-2 text-base/7 font-semibold text-gray-900 hover:bg-gray-50"
                 >
                   news
-                </a>
-                <a
+                </Link>
+                <Link
                   href="/create"
                   className="-mx-3 block rounded-lg px-3 py-2 text-base/7 font-semibold text-gray-900 hover:bg-gray-50"
                 >
                   create
-                </a>
+                </Link>
               </div>
             </div>
           </div>

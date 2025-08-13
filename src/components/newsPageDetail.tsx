@@ -13,13 +13,16 @@ function NewsPageDetail() {
     getNews().then((result) => setData(result));
   }, []);
   console.log(data)
-  const specificNews = data?.results.find((i) => i.article_id === String(params.id));
+  
   if (!data || !params?.id) {
     return <p>Unable to load news data.</p>;
   }
   return (
     <div>
-      {specificNews ? (
+      {data.status != 'error' ? 
+      <h2>{data.results.find(i => i.article_id == params.id)?.title}</h2>
+      : <> data is not loaded </>}
+      {/* {data.results !== 'error' ? (
         <div className="md:grid md:grid-cols-3 gap-10 my-10">
           <img src={specificNews.image_url} alt="news image" />
           <div className="col-span-2">
@@ -47,7 +50,7 @@ function NewsPageDetail() {
         </div>
       ) : (
         <p>data is not recognized</p>
-      )}
+      )} */}
     </div>
   );
 }
