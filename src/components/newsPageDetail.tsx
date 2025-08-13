@@ -12,7 +12,10 @@ function NewsPageDetail() {
   useEffect(() => {
     getNews().then((result) => setData(result));
   }, []);
-  const specificNews = data?.results.find((i) => i.article_id === params.id);
+  const specificNews = data?.results.find((i) => i.article_id === String(params.id));
+  if (!data || !params?.id) {
+    return <p>Unable to load news data.</p>;
+  }
   return (
     <div>
       {specificNews ? (
