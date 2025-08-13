@@ -56,8 +56,8 @@ function NewsPageDetail() {
       ) : (
         <p>data is not recognized</p>
       )} */}
-    </div>
-  );
+  //   </div>
+  // );
 }
 
 export default NewsPageDetail
