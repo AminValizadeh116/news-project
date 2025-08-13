@@ -11,9 +11,9 @@ function Intro() {
           src={newsPic}
           alt="news_picture"
         />
-        <div className="-mt-20 ml-10 flex gap-5 max-[450]:ml-2 max-sm:-mt-14 max-sm:gap-1">
-        <Link href="" className="px-13 py-3 text-white bg-red-900 rounded-xl max-sm:text-sm max-[500]:px-5 max-sm:py-1">read</Link>
-        <Link href="" className="px-13 py-3 bg-white rounded-xl border border-red-900 text-red-900 max-sm:text-sm max-sm:px-8 max-sm:py-1">create</Link>
+        <div className="-mt-20 ml-10 flex gap-5 max-[450px]:ml-2 max-sm:-mt-14 max-sm:gap-1">
+        <Link href="/allNews" className="px-13 py-3 text-white bg-red-900 rounded-xl max-sm:text-sm max-[500px]:px-5 max-sm:py-1">read</Link>
+        <Link href="/create" className="px-13 py-3 bg-white rounded-xl border border-red-900 text-red-900 max-sm:text-sm max-sm:px-8 max-sm:py-1">create</Link>
         </div>
       </div>
 

@@ -37,8 +37,8 @@ function NewsCart({
         };
       case "lg":
         return {
-          height: "max-sm:min-h-25 sm:h-50 md:h-60 2xl:h-80",
-          width: "max-w-80",
+          height: "max-sm:min-h-10 ",
+          width: "max-sm:min-w-10",
           image_h: 200,
           image_w: 200,
           h2_width: "max-w-80"
@@ -49,9 +49,7 @@ function NewsCart({
   };
   return (
     <Link href={`/allNews/${article_id}`} className="bg-orange-50 shadow-orange-300 shadow my-2 p-5 rounded-2xl max-sm:p-1">
-      <div
-        className={`flex items-center pt-2 ${cartSize().width} pb-3`}
-      >
+      <div className={`flex items-center pt-2 ${cartSize().width} pb-3`}>
         <img src={image_url} alt="i" className={`rounded ${cartSize().height} ${cartSize().width} object-contain`} />
       </div>
       <div>
