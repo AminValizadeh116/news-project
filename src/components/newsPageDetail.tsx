@@ -4,22 +4,21 @@ import { Root } from '@/types/services';
 // import Link from 'next/link';
 import { useParams } from 'next/navigation';
 import React, { useEffect, useState } from 'react'
+import NewsPageData from './newsPageData';
 
 function NewsPageDetail() {
   const params = useParams()
-  console.log(params.id)
   const [data, setData] = useState<Root>();
   useEffect(() => {
     getNews().then((result) => setData(result));
   }, []);
-  console.log(data)
   
   if (!data || !params?.id) {
     return <p>Unable to load news data.</p>;
   }
   else {
     return(
-      <p>hello</p>
+      <NewsPageData data={data} id={String(params.id)} />
     )
   }
   // return (
