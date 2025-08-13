@@ -17,11 +17,16 @@ function NewsPageDetail() {
   if (!data || !params?.id) {
     return <p>Unable to load news data.</p>;
   }
-  return (
-    <div>
-      {data.status != 'error' ? 
-      <h2>{data.results.find(i => i.article_id == params.id)?.title}</h2>
-      : <> data is not loaded </>}
+  else {
+    return(
+      <p>{data.results.find(i => i.article_id == params.id)?.title}</p>
+    )
+  }
+  // return (
+  //   <div>
+  //     {data.status != 'error' ? 
+  //     <h2>{data.results.find(i => i.article_id == params.id)?.title}</h2>
+  //     : <> data is not loaded </>}
       {/* {data.results !== 'error' ? (
         <div className="md:grid md:grid-cols-3 gap-10 my-10">
           <img src={specificNews.image_url} alt="news image" />
