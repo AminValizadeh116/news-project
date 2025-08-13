@@ -19,7 +19,7 @@ function NewsPageDetail() {
   }
   else {
     return(
-      <p>{data.results.find(i => i.article_id == params.id)?.title}</p>
+      <p>hello</p>
     )
   }
   // return (
