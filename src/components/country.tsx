@@ -13,9 +13,9 @@ function Country() {
     getNews().then(setData);
   }, []);
   return (
-  <div >
+  <div>
     <h2 className="max-sm:xl max-sm:font-bold pt-10">{country}</h2>
-    <div className="grid grid-cols-3 gap-3 pb-15">
+    <div className="grid grid-cols-3 max-sm:grid-cols-1 gap-3 pb-15">
       {data?.status !== "error" ? (
         data?.results
           .filter((i) => i.country.includes(country as string))

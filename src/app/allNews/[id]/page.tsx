@@ -1,11 +1,10 @@
 import NewsPageDetail from "@/components/newsPageDetail";
 
-async function page({params}: {params:Promise<{id: string}>}) {
-  const sendParams = await params
+async function page() {
 
   return (
     <div>
-     <NewsPageDetail params={sendParams.id}/>
+     <NewsPageDetail/>
     </div>
   )
 }

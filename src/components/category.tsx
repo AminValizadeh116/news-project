@@ -13,10 +13,9 @@ function Category() {
   useEffect(() => {
     getNews().then((data) => setData(data));
   }, []);
-  console.log(data)
 
   return (
-    <div className="grid grid-cols-3 overflow-auto pr-5 gap-5">
+    <div className="grid grid-cols-3 max-sm:grid-cols-1 overflow-auto pr-5 gap-5">
       {data?.status !== "error" ? (
         data?.results
           .filter((i) => i.category.includes(search as string))
