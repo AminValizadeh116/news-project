@@ -1,7 +1,7 @@
 'use client'
 import getNews from '@/services/api';
 import { Root } from '@/types/services';
-import Link from 'next/link';
+// import Link from 'next/link';
 import { useParams } from 'next/navigation';
 import React, { useEffect, useState } from 'react'
 
