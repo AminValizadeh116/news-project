@@ -7,6 +7,7 @@ import laptop from "./../../../public/laptop.png";
 import phone from "./../../../public/phone.png";
 
 function Footer() {
+
   return (
     <div className="bg-rose-950 rounded-t-3xl">
       <div className="w-6xl m-auto max-xl:container md:grid md:grid-cols-3 max-md:flex max-md:flex-col-reverse max-sm:px-5 py-10">
